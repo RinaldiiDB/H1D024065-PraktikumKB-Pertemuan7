@@ -1,22 +1,25 @@
+## Rinaldi Dasa Bahtiar - H1D024065  
+## Praktikum Kecerdasan Buatan - Shift A  
+
 # Klasifikasi Dataset Iris menggunakan Jaringan Syaraf Tiruan (JST)
 
-Proyek ini adalah implementasi Jaringan Syaraf Tiruan (Artificial Neural Network) menggunakan TensorFlow dan Keras untuk mengklasifikasikan spesies bunga Iris berdasarkan fitur morfologinya.
+Program ini adalah implementasi Jaringan Syaraf Tiruan (Artificial Neural Network) menggunakan TensorFlow dan Keras untuk mengklasifikasikan spesies bunga Iris berdasarkan fitur morfologinya.
 
-## 📋 Deskripsi Proyek
+## Deskripsi Proyek
 Program ini memuat dataset Iris, melakukan prapemrosesan data, membangun model JST dengan beberapa layer *Dense*, melatih model, mengevaluasi performanya, dan menyediakan antarmuka sederhana untuk melakukan prediksi pada data baru.
 
-## 🛠️ Prasyarat
-Sebelum menjalankan program, pastikan Anda telah menginstal pustaka Python berikut:
+##Prasyarat
+Sebelum menjalankan program, pastikan Anda telah menginstal library Python berikut:
 
 ```bash
 pip install tensorflow pandas numpy scikit-learn matplotlib seaborn
 ```
 
-## 📂 Struktur File
+## Struktur File
 - `jst-iris.py`: Skrip utama yang berisi logika pemrosesan, pelatihan model, dan visualisasi.
 - `iris.data`: Dataset Iris dalam format CSV (tanpa header).
 
-## 🚀 Cara Menjalankan
+## Cara Menjalankan
 1. Pastikan file `iris.data` berada di direktori yang sama dengan `jst-iris.py`.
 2. Jalankan skrip menggunakan Python:
    ```bash
@@ -33,11 +36,11 @@ Model dibangun menggunakan API `Sequential` dari Keras dengan struktur sebagai b
 - **Hidden Layer 3**: 300 neuron, aktivasi ReLU.
 - **Output Layer**: 3 neuron (Iris-setosa, Iris-versicolor, Iris-virginica), aktivasi Softmax.
 
-## 📊 Visualisasi
+## Visualisasi
 - **Training History**: Menampilkan plot akurasi dan loss selama proses pelatihan.
 - **Confusion Matrix**: Menunjukkan performa model dalam mengklasifikasikan data uji menggunakan heatmap dari Seaborn.
 
-## 📝 Contoh Input Prediksi
+## Contoh Input Prediksi
 Saat diminta memasukkan data baru, Anda dapat menggunakan nilai contoh berikut:
 - Sepal length: 5.1
 - Sepal width: 3.5
